@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2dvV+ymjRuCIQN3L79bFmJC4Vs6K0DIbmDn+tNwcT6A=",
+  "Source": "SearchEngine",
+  "BasePath": "_content/SearchEngine",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
