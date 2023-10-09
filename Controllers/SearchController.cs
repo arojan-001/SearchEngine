@@ -38,11 +38,11 @@ namespace SearchEngine.Controllers
             List<string> searchWords = srchtxt.ToLower().Split(' ').ToList();
             List<string> foundKeys = new List<string>();
 
-            foreach (var kvp in docTable)
+            foreach (var docKey in docTable.Select(kvp => kvp.Key).Distinct())
             {
-                if (ContainsAllWords(kvp.Key, searchWords))
+                if (ContainsAllWords(docKey, searchWords))
                 {
-                    foundKeys.Add(kvp.Key);
+                    foundKeys.Add(docKey);
                 }
             }
 

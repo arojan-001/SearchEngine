@@ -274,11 +274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\araik\\source\\repos\\SearchEngine\\SearchEngine.csproj",
+      "projectUniqueName": "D:\\Arayik\\Git\\SearchEngine\\SearchEngine.csproj",
       "projectName": "SearchEngine",
-      "projectPath": "C:\\Users\\araik\\source\\repos\\SearchEngine\\SearchEngine.csproj",
+      "projectPath": "D:\\Arayik\\Git\\SearchEngine\\SearchEngine.csproj",
       "packagesPath": "C:\\Users\\araik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\araik\\source\\repos\\SearchEngine\\obj\\",
+      "outputPath": "D:\\Arayik\\Git\\SearchEngine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
