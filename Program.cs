@@ -11,6 +11,16 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Your API", Version = "v1" });
 });
+var devCorsPolicy = "devCorsPolicy";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(devCorsPolicy, builder => {
+        //builder.WithOrigins("http://localhost:3000").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        //builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
+        //builder.SetIsOriginAllowed(origin => true);
+    });
+});
 
 var app = builder.Build();
 
@@ -22,6 +32,7 @@ if (app.Environment.IsDevelopment())
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API V1");
     });
+    app.UseCors(devCorsPolicy);
 }
 
 app.UseHttpsRedirection();
